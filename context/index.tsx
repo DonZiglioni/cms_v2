@@ -1,6 +1,11 @@
 "use client"
 import { createContext, useState, useContext } from "react";
 
+type CartProp = {
+    product: any;
+    variants: any;
+}
+
 const AppContext = createContext<any>([]);
 
 export function AppWrapper({
